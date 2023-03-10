@@ -1,0 +1,54 @@
+/* Fuente y colores */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #0072c6;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Separador */
+hr {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 2px solid #0072c6;
+}
+
+/* Estilo del número */
+.num {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0072c6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc; 
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

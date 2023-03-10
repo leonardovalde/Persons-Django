@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.2em;
+  }
+} 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.vertical-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.vertical-table div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.vertical-table strong {
+  min-width: 100px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+

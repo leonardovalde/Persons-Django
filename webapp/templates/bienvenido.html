@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistema de administracion de personas - SAP</h1>
+      <hr />
+      <p>Numero de personas = <span class="num">{{no}}</span></p>
+    </div>
+    <div>
+      <a href="addPerson"> Nueva Persona </a>
+    </div>
+    <div>
+    <table>
+        <tr>
+            <th> ID </th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Detalle</th>
+        </tr>
+        {% for persona in personas %}
+        <tr>
+            <td>{{persona.id}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido}}</td>
+            <td>{{persona.email}}</td>
+            <td><a href="detalle_persona/{{persona.id}}">Mas</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle Persona</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>DETALLES </h1>
+        <div class="vertical-table">
+            <div>
+                <strong>ID:</strong>
+                <span>{{persona.id}}</span>
+            </div>
+            <div>
+                <strong>Nombre:</strong>
+                <span>{{persona.nombre}}</span>
+            </div>
+            <div>
+                <strong>Apellido:</strong>
+                <span>{{persona.apellido}}</span>
+            </div>
+            <div>
+                <strong>Email:</strong>
+                <span>{{persona.email}}</span>
+            </div>
+        </div>
+
+        <a href="{% url 'index'%}">Back Home!!</a>
+    </div>
+</body>
+</html>
